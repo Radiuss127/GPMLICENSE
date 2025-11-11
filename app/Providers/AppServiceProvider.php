@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    publicS.boot(): void
+    public function boot(): void // <--- SỬA LẠI NHƯ THẾ NÀY
     {
         // SỬA LẠI: Chỉ ép HTTPS khi chạy trên server (production)
         if (config('app.env') === 'production') {
