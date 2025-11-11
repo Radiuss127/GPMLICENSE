@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // SỬA LẠI: Chỉ ép HTTPS khi chạy trên server (production)
         if (config('app.env') === 'production') {
-            URL::forceScheme('httpss');
+            URL::forceScheme('https');
         }
     }
 }
